@@ -160,10 +160,13 @@ window.addEventListener("resize", function() {
  if (window.innerWidth > 768) {
   container.style.height = "700px";
   container.style.width = "90%"
+  footer.style.marginTop = "150%"
+  footerTxt.style.color = "black"
   // set height to 600px in desktop mode
  } 
  if (window.innerWidth < 393 ){
   container.style.height = "98%";
  }
 });
+
 
