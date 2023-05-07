@@ -87,6 +87,7 @@ body{
  text-align: center;
  justify-content: center;
  align-items: center;
+ color: #26de81;
 }
 
 
@@ -139,6 +140,7 @@ body{
  justify-content: space-around;
  margin-top: 15px;
  align-items: center;
+ color: #ffb92a;
  
 }
 .genre div{
@@ -153,6 +155,12 @@ body{
 }
 .cast{
  margin: 10px 5px;
+}
+.plot h2{
+ 
+}
+.cast h2{
+ 
 }
 .plot p{
  font-size: 15px;
@@ -203,3 +211,14 @@ body{
   scale: 1;
  }
 }
+
+
+/* Responsive 
+@media (min-width: 672px){
+ 
+}
+@media only screen and (max-width: 393px) {
+ .container{
+  height: 95vh;
+ }
+}*/
