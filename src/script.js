@@ -111,6 +111,9 @@ function getMovie (){
    
    if(window.innerWidth > 762){
     container.style.height = "fit-content";
+    footer.style.marginTop = "130%";
+    footer.style.marginLeft = "8%";
+    footerTxt.style.color = "black";
    }
     }
     
@@ -128,6 +131,10 @@ function getMovie (){
     footer.style.display = "none";
     if (window.innerWidth > 762) {
      container.style.height = "fit-content";
+     footer.style.display = "block";
+     footer.style.marginTop = "135%";
+     footer.style.marginLeft = "7%";
+     footerTxt.style.color = "black";
      if (window.innerWidth < 393){
       container.style.height = "fit-content";
      }
