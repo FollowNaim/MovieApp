@@ -1,0 +1,204 @@
+/* CopyRight 2023 www.naim.vercel.app's Owner All Rights Reserved */
+
+
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+body{
+ font-family: 'Poppins', sans-serif;
+ height: 100vh;
+ color: white;
+ text-align: center;
+ background: linear-gradient(#1c1917 50%, #ffb92a 70%);
+}
+
+/* Main Container */
+
+.container{
+ background: #1e293b;
+ width: 90vw;
+ height: 70px;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ position: absolute;
+ padding: 10px 10px;
+ border-radius: 10px;
+ max-width: 600px;
+ overflow: hidden;
+ transition: 0.6s ease-out;
+ box-shadow: 1.2em 2em 3em rgba(0, 0, 0, 0.5);
+}
+
+/* Search Box Styling */
+
+.searchBox{
+ margin-top: 10px;
+}
+
+.searchBox input{
+ outline: none;
+ border: none;
+ padding: 8px 15px;
+ border: 1px solid #a0a0a0;
+ border-radius: 7px;
+ background-color: transparent;
+ color: white;
+ text-transform: uppercase;
+ text-align: center;
+}
+.searchBox input:focus {
+ border-color: #fff;}
+.searchBtn{
+ padding: 8px 10px;
+ margin-left: 8px;
+ border-radius: 8px;
+ border: none;
+ cursor: pointer;
+ background: #ffb92a;
+}
+
+/* Error Box Styling */
+
+.errorArea{
+ margin-top: 30px;
+ display: none;
+}
+.errorPhoto{
+ margin-top: -20px;
+ width: 350px;
+ height: 400px;
+ 
+}
+
+/* Info Box Styling */
+
+.info{
+ 
+ margin-top: 20px;
+}
+.textArea h2{
+ margin-top: 5px;
+ margin-bottom: 6px;
+ font-size: 24px;
+ text-align: center;
+ justify-content: center;
+ align-items: center;
+}
+
+
+.info img{
+ width: 150px;
+ height: 200px;
+ margin-right: 15px;
+ border-radius: 10px;
+}
+
+/* Rating Box css */
+
+
+.rated{
+ text-align: center;
+ align-items: center;
+ justify-content: center;
+ margin-left: 50px;
+ margin-bottom: 8px;
+}
+
+.rated img{
+ width: 20px;
+ height: 20px;
+ float: left;
+ margin-left: 30%;
+ 
+}
+.rated span{
+ position: relative;
+ margin-left: -150px;
+ 
+}
+
+.year span{
+ font-size: 15px;
+ justify-content: space-between;
+ 
+ padding: 2px;
+}
+.details{
+ text-align: left;
+}
+
+/* Genre Styling */
+
+
+.genre{
+ display: flex;
+ justify-content: space-around;
+ margin-top: 15px;
+ align-items: center;
+ 
+}
+.genre div{
+ font-size: 14px;
+ border: 1px solid black;
+ padding: 10px 20px;
+ border-radius: 10px;
+}
+
+.plot {
+ margin: 10px 5px;
+}
+.cast{
+ margin: 10px 5px;
+}
+.plot p{
+ font-size: 15px;
+}
+.cast p{
+ font-size: 15px;
+}
+
+.searchBox .active{
+ border: 3px solid red;
+}
+.errorActive{
+ margin-top: 30px;
+ font-weight: bold;
+ color: red;
+ display: none;
+}
+
+/* Footer Styling */
+
+.footer{
+ position: absolute;
+ margin-top: 110%;
+ background: transparent;
+ width: 80%;
+ height: 50px;
+ margin-left: 35px;
+ border-radius: 10px;
+ text-shadow: 1.2em 2em 3em rgba(0, 0, 0, 0.2);
+}
+
+
+.footer a{
+ text-decoration: none;
+ color: black;
+}
+
+
+
+.fadeIn{
+ animation: 0.5s an1 forwards;
+ animation-delay: 0.5s;
+ 
+}
+@keyframes an1{
+ to{
+  scale: 1;
+ }
+}
