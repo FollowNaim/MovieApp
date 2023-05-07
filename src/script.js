@@ -35,6 +35,7 @@ function getMovie (){
   movieRef.classList.add("active");
   errorActive.style.display = "block";
   errorActive.innerHTML = ` <h3> Lol! <br> You have to enter A Movie Name O⁠_⁠o</h3>`
+  
   footer.style.marginTop = "130%";
   footerTxt.style.color = "black";
 
@@ -104,9 +105,17 @@ function getMovie (){
     errorActive.style.display = "none";
     errorArea.innerHTML = `   <h2>Opps! You Typed Wrong Movie Name</h2>
    <img src="src/404.png" alt="" class="errorPhoto">`
+   footer.style.display ="block";
    footer.style.marginTop = "170%";
    footerTxt.style.color = "black";
+   
+   if(window.innerWidth > 762){
+    container.style.height = "fit-content";
+   }
     }
+    
+    
+    
     
     // OtherWise This
     
@@ -117,6 +126,12 @@ function getMovie (){
     result.classList.add("fadeIn");
     result.style.display = 'block';
     footer.style.display = "none";
+    if (window.innerWidth > 762) {
+     container.style.height = "fit-content";
+     if (window.innerWidth < 393){
+      container.style.height = "fit-content";
+     }
+    }
     
     }
    
@@ -153,10 +168,7 @@ movieRef.addEventListener("keydown",(e)=>{
  }
 });
 
-
-// Responsive
-
-window.addEventListener("resize", function() {
+/*window.addEventListener("resize", function() {
  if (window.innerWidth > 768) {
   container.style.height = "700px";
   container.style.width = "90%"
@@ -168,5 +180,4 @@ window.addEventListener("resize", function() {
   container.style.height = "98%";
  }
 });
-
-
+*/
