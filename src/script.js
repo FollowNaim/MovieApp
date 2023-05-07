@@ -152,3 +152,18 @@ movieRef.addEventListener("keydown",(e)=>{
   getMovie();
  }
 });
+
+
+// Responsive
+
+window.addEventListener("resize", function() {
+ if (window.innerWidth > 768) {
+  container.style.height = "700px";
+  container.style.width = "90%"
+  // set height to 600px in desktop mode
+ } 
+ if (window.innerWidth < 393 ){
+  container.style.height = "98%";
+ }
+});
+
