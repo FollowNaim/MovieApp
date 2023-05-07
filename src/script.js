@@ -34,7 +34,7 @@ function getMovie (){
   movieRef.placeholder = "You have to Enter A movie Name"
   movieRef.classList.add("active");
   errorActive.style.display = "block";
-  errorActive.innerHTML = ` <h3> Lol! <br> You have to enter A Movie Name O⁠_⁠o</h3>`
+  errorActive.innerHTML = ` <h3> Lol ! <br> You have to enter A Movie Name O⁠_⁠o</h3>`
   
   footer.style.marginTop = "130%";
   footerTxt.style.color = "black";
