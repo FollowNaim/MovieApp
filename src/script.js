@@ -21,7 +21,7 @@ function getMovie (){
  const result = document.querySelector(".result");
  const errorArea = document.querySelector(".errorArea");
  const movieName = movieRef.value;
- const url = `http://www.omdbapi.com/?t=${movieName}&apikey=${key}`;
+ const url = `https://www.omdbapi.com/?t=${movieName}&apikey=${key}`;
  
  
  
