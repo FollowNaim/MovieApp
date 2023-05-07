@@ -109,7 +109,7 @@ function getMovie (){
     }
     
     // OtherWise This
-    ''
+    
     else{
     container.style.height = "92%";
     container.classList.add("fadeIn");
