@@ -39,6 +39,7 @@ function getMovie (){
   
   footer.style.marginTop = "130%";
   footerTxt.style.color = "black";
+  errorArea.style.display = "none"
 
   
  }
@@ -117,6 +118,9 @@ function getMovie (){
     footer.style.marginTop = "130%";
     footer.style.marginLeft = "8%";
     footerTxt.style.color = "black";
+    errorArea.style.height = "fit-content";
+    errorArea.style.marginBottom = "8%";
+   
    }
     }
     
@@ -126,14 +130,17 @@ function getMovie (){
     // OtherWise This
     
     else{
-    container.style.height = "92%";
+    container.style.height = "95%";
     container.classList.add("fadeIn");
     errorActive.style.display = "none";
     result.classList.add("fadeIn");
     result.style.display = 'block';
     footer.style.display = "none";
+    movieRef.classList.remove("active")
     if (window.innerWidth > 762) {
+     errorArea.style.display = "none";
      container.style.height = "fit-content";
+     
      footer.style.display = "block";
      footer.style.marginTop = "135%";
      footer.style.marginLeft = "7%";
