@@ -125,7 +125,7 @@ function getMovie (){
     else{
     container.style.height = "92%";
     container.classList.add("fadeIn");
-    errorArea.style.display = "none";
+    errorActive.style.display = "none";
     result.classList.add("fadeIn");
     result.style.display = 'block';
     footer.style.display = "none";
