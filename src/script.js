@@ -104,7 +104,7 @@ function getMovie (){
     errorArea.style.display = "block";
     container.style.height = "50%";
     errorActive.style.display = "none";
-    errorArea.innerHTML = `   <h2><span id="errortx">Opps! You Typed Wrong Movie Name </span><br><span id="errortx2"> Click On This Button to Check your Input is Right Or Not.</span></h2>
+    errorArea.innerHTML = `   <h2><span id="errortx">Opps!</span> <span id="mName">${movieName}</span><span id="errortx"> isn't A Movie Name </span><br><span id="errortx2"> Click On This Button to Check your Input is Right Or Not.</span></h2>
         <button id="googleSearch" onclick="googleSearch()">Search This on google</button>
  `
  //  <img src="src/404.png" alt="" class="errorPhoto"
