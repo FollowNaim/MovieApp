@@ -7,6 +7,7 @@ const movieRef = document.querySelector("#movieName");
 const searchBtn = document.querySelector(".searchBtn");
 const container = document.querySelector(".container");
 const result = document.querySelector(".result");
+const googleBtn = document.querySelectorAll("#googleSearch");
 const errorArea = document.querySelector(".errorArea");
 const errorActive = document.querySelector(".errorActive");
 const footer = document.querySelector(".footer");
@@ -101,10 +102,12 @@ function getMovie (){
    if (data.Response == "False") {
     result.style.display = "none";
     errorArea.style.display = "block";
-    container.style.height = "65%";
+    container.style.height = "50%";
     errorActive.style.display = "none";
-    errorArea.innerHTML = `   <h2>Opps! You Typed Wrong Movie Name</h2>
-   <img src="src/404.png" alt="" class="errorPhoto">`
+    errorArea.innerHTML = `   <h2><span id="errortx">Opps! You Typed Wrong Movie Name </span><br><span id="errortx2"> Click On This Button to Check your Input is Right Or Not.</span></h2>
+        <button id="googleSearch" onclick="googleSearch()">Search This on google</button>
+ `
+ //  <img src="src/404.png" alt="" class="errorPhoto"
    footer.style.display ="block";
    footer.style.marginTop = "170%";
    footerTxt.style.color = "black";
@@ -174,6 +177,12 @@ movieRef.addEventListener("keydown",(e)=>{
   getMovie();
  }
 });
+
+function googleSearch(){
+ const searchName = document.querySelector("#movieName").value;
+ const url = `https://www.google.com/search?q=movie:${searchName}`;
+ window.location.href = url;
+}
 
 /*window.addEventListener("resize", function() {
  if (window.innerWidth > 768) {
