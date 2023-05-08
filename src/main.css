@@ -81,6 +81,9 @@ body{
  height: 350px;
  
 }
+#mName{
+ color: orange;
+}
 #googleSearch {
  width: 150px;
  height: 40px;
